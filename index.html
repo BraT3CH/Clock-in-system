@@ -839,24 +839,18 @@
     </div>
 
     <script>
-       // Import the functions you need from the SDKs you need
-          import { initializeApp } from "firebase/app";
-        // TODO: Add SDKs for Firebase products that you want to use
-         // https://firebase.google.com/docs/web/setup#available-libraries
-
-           // Your web app's Firebase configuration
-          const firebaseConfig = {
-         apiKey: "AIzaSyCpn7_4RTr4egV18ILtpxwY_cwpT3WDLIw",
-         authDomain: "employee-clock-system-39f6c.firebaseapp.com",
-          databaseURL: "https://employee-clock-system-39f6c-default-rtdb.firebaseio.com",
+     const firebaseConfig = {
+          apiKey: "AIzaSyCpn7_4RTr4egV18ILtpxwY_cwpT3WDLIw",
+           authDomain: "employee-clock-system-39f6c.firebaseapp.com",
+           databaseURL: "https://employee-clock-system-39f6c-default-rtdb.firebaseio.com",
            projectId: "employee-clock-system-39f6c",
             storageBucket: "employee-clock-system-39f6c.firebasestorage.app",
-            messagingSenderId: "575531580405",
+           messagingSenderId: "575531580405",
             appId: "1:575531580405:web:06fcb7226f12c638a4bebc"
-};
+           };
 
-           // Initialize Firebase
-         const app = initializeApp(firebaseConfig);
+            // Check if Firebase is configured
+        let firebaseConfigured = firebaseConfig.apiKey !== "YOUR_API_KEY_HERE";
         
         if (!firebaseConfigured) {
             document.getElementById('configWarning').style.display = 'block';
