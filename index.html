@@ -839,17 +839,21 @@
     </div>
 
     <script>
-     const firebaseConfig = {
-          apiKey: "AIzaSyCpn7_4RTr4egV18ILtpxwY_cwpT3WDLIw",
-           authDomain: "employee-clock-system-39f6c.firebaseapp.com",
-           databaseURL: "https://employee-clock-system-39f6c-default-rtdb.firebaseio.com",
-           projectId: "employee-clock-system-39f6c",
-            storageBucket: "employee-clock-system-39f6c.firebasestorage.app",
-           messagingSenderId: "575531580405",
+        // ==========================================
+        // FIREBASE CONFIGURATION
+        // ==========================================
+        // REPLACE THIS WITH YOUR FIREBASE CONFIG
+             const firebaseConfig = {
+            apiKey: "AIzaSyCpn7_4RTr4egV18ILtpxwY_cwpT3WDLIw",
+             authDomain: "employee-clock-system-39f6c.firebaseapp.com",
+             databaseURL: "https://employee-clock-system-39f6c-default-rtdb.firebaseio.com",
+             projectId: "employee-clock-system-39f6c",
+             storageBucket: "employee-clock-system-39f6c.firebasestorage.app",
+            messagingSenderId: "575531580405",
             appId: "1:575531580405:web:06fcb7226f12c638a4bebc"
-           };
+       };
 
-            // Check if Firebase is configured
+        // Check if Firebase is configured
         let firebaseConfigured = firebaseConfig.apiKey !== "YOUR_API_KEY_HERE";
         
         if (!firebaseConfigured) {
